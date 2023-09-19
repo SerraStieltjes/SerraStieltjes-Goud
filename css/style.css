@@ -1,6 +1,6 @@
 h1 {
   font-size: 3em;
-  color: pink;
+  color: blue;
   text-align: center;
 }
 
@@ -108,7 +108,7 @@ h1 {
 /* **********************************************  FOTO KERSTBOOM  **********************************************  */
 
 .cultuur a {
-  text-decoration: gastgezin;
+  text-decoration: cultuur;
 }
 
 .cultuur .tekst2 {
@@ -120,7 +120,7 @@ h1 {
 }
 
 .cultuur:hover .tekst2:after {
-  content: "geil";
+  content: "cultuur";
   font-weight: bold;
   font-size: 72px;
   font-family: sans-serif;
