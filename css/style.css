@@ -1,32 +1,47 @@
+/* 
+* {
+  margin: 0;
+  padding: 0;
+}
+*/
+
 h1 {
   font-size: 3em;
-  color: blue;
+  color: whitesmoke;
   text-align: center;
 }
+
+h2,
+p {
+  color: whitesmoke;
+}
+
+body {
+  background-image: url("/img/background.png");
+  background-size: cover;
+  background-position-x: center;
+
+}
+
+/* **************************************** menu homepage **************************************** */
+/*  https://codepen.io/houspod/pen/AwXJXz?editors=1100 */
 
 .menu {
   display: flex;
   justify-content: space-evenly;
 }
 
-/* .menu img {
-  width: 20em;
-} */
-
-
-/* **********************************************  FOTO SIDE EYE  **********************************************  */
-/*  https://codepen.io/houspod/pen/AwXJXz?editors=1100 */
-
-.highschool a {
-  text-decoration: highschool;
+.NewYork img,
+.Seattle img,
+.WashingtonDC img {
+  position: absolute;
+  width: 100%;
+  height: auto;
 }
 
-
-
-.highschool,
-.cultuur,
-.gastgezin,
-.reizen {
+.NewYork,
+.Seattle,
+.WashingtonDC {
   position: relative;
   display: flex;
   align-items: center;
@@ -36,12 +51,19 @@ h1 {
   overflow: hidden;
 }
 
+.NewYork:hover .overlay,
+.Seattle:hover .overlay,
+.WashingtonDC:hover .overlay {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
 
 /* gaat om de tekst */
-.highschool>*,
-.cultuur>*,
-.gastgezin>*,
-.reizen>* {
+.NewYork>*,
+.Seattle>*,
+.WashingtonDC>* {
   position: relative;
   display: block;
   width: 100%;
@@ -50,9 +72,17 @@ h1 {
   justify-content: space-around;
   text-align: center;
   align-items: center;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.highschool .tekst1 {
+/* **** New York **** */
+.NewYork,
+a {
+  text-decoration: New York;
+}
+
+.NewYork .tekst1 {
   position: relative;
   z-index: 2;
   width: 100%;
@@ -60,8 +90,8 @@ h1 {
   font: 0/0 a;
 }
 
-.highschool:hover .tekst1:after {
-  content: "High School";
+.NewYork:hover .tekst1:after {
+  content: "New York";
   font-weight: bold;
   font-size: 72px;
   font-family: sans-serif;
@@ -69,49 +99,13 @@ h1 {
   Color: white;
 }
 
-.highschool:hover .overlay,
-.cultuur:hover .overlay,
-.gastgezin:hover .overlay,
-.reizen:hover .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-right: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
+/* **** Seattle  ****  */
+
+.Seattle a {
+  text-decoration: Seattle;
 }
 
-.highschool img,
-.cultuur img,
-.reizen img {
-  position: absolute;
-  /* top: 0;
-  left: 0;
-  margin-right: 0; */
-  /* z-index: 0; */
-  width: 100%;
-  height: auto;
-}
-
-.gastgezin img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-right: 0;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-}
-
-
-/* **********************************************  FOTO KERSTBOOM  **********************************************  */
-
-.cultuur a {
-  text-decoration: cultuur;
-}
-
-.cultuur .tekst2 {
+.Seattle .tekst2 {
   position: relative;
   z-index: 2;
   width: 100%;
@@ -119,8 +113,8 @@ h1 {
   font: 0/0 a;
 }
 
-.cultuur:hover .tekst2:after {
-  content: "cultuur";
+.Seattle:hover .tekst2:after {
+  content: "Seattle";
   font-weight: bold;
   font-size: 72px;
   font-family: sans-serif;
@@ -128,26 +122,22 @@ h1 {
   Color: white;
 }
 
+/* **** Washington DC  *****  */
 
 
-
-/* **********************************************  FOTO FAMILY GUY  **********************************************  */
-
-
-.cultuur a {
-  text-decoration: gastgezin;
+.WashingtonDC {
+  text-decoration: Washington DC;
 }
 
-.gastgezin .tekst3 {
+.WashingtonDC .tekst3 {
   position: relative;
   z-index: 2;
   width: 100%;
   height: auto;
-  font: 0/0 a;
 }
 
-.gastgezin:hover .tekst3:after {
-  content: "gastgezin";
+.WashingtonDC:hover .tekst3:after {
+  content: "Washington DC";
   font-weight: bold;
   font-size: 72px;
   font-family: sans-serif;
@@ -155,27 +145,88 @@ h1 {
   Color: white;
 }
 
+/* ******** About Me link ********** */
 
-/* **********************************************  FOTO NYC  **********************************************  */
-
-
-.reizen a {
-  text-decoration: reizen;
+nav.about {
+  background-color: #333;
+  position: relative;
+  justify-content: ri;
 }
 
-.reizen .tekst4 {
+nav.about a {
+  display: inline-block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+}
+
+nav.about a:hover {
+  background-color: #777;
+}
+
+
+
+/* **************** navigatie menu ********************* */
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+li {
+  display: inline;
+}
+
+nav.navigatie {
+  background-color: #333;
   position: relative;
-  z-index: 2;
+  justify-content: center;
+}
+
+nav.navigatie a {
+  display: inline-block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+}
+
+nav.navigatie a:hover {
+  background-color: #777;
+}
+
+/* ********* foto gallerij NYC, Seattle, Washington DC, about ******** */
+
+div.galerij {
+  border: 5px solid whitesmoke;
+  border-style: double;
+  border-spacing: 2em;
+}
+
+div.galerij img {
   width: 100%;
   height: auto;
-  font: 0/0 a;
 }
 
-.reizen:hover .tekst4:after {
-  content: "reizen";
-  font-weight: bold;
-  font-size: 72px;
-  font-family: sans-serif;
-  line-height: 1;
-  Color: white;
+div.beschrijving {
+  padding: 1em;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.responsive {
+  padding: 0.4em;
+  float: left;
+  width: 30%;
+}
+
+
+/* ****************** footer ****************** */
+
+footer {
+  margin-top: 200em;
+  text-align: center;
+  width: 100%;
+  height: 100px;
 }
