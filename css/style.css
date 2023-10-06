@@ -225,10 +225,21 @@ div.beschrijving {
 /* ****************** footer ****************** */
 
 footer {
-  margin-top: 200em;
+  margin-top: 110em;
   text-align: center;
   width: 100%;
   height: 100px;
+}
+
+footer img {
+  display: flex;
+  align-items: center;
+  height: 3%;
+  width: 3%;
+
+
+
+
 }
 
 
