@@ -80,10 +80,6 @@ body {
 }
 
 /* **** New York **** */
-.NewYork,
-a {
-  text-decoration: New York;
-}
 
 .NewYork .tekst1 {
   position: relative;
@@ -103,10 +99,6 @@ a {
 
 /* **** Seattle  ****  */
 
-.Seattle a {
-  text-decoration: Seattle;
-}
-
 .Seattle .tekst2 {
   position: relative;
   z-index: 2;
@@ -124,10 +116,6 @@ a {
 }
 
 /* **** Washington DC  *****  */
-
-.WashingtonDC {
-  text-decoration: Washington DC;
-}
 
 .WashingtonDC .tekst3 {
   position: relative;
@@ -149,8 +137,6 @@ a {
 
 .about {
   background-color: #333;
-  position: center;
-  justify-content: center;
 }
 
 .about li {
